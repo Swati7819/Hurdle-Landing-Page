@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 75, 177);
+    
+}
+
+.logo{
+    width:50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 4em;
+    background-image: url(/static/images/bg-mobile.svg);
+    background-color: rgb(103, 75, 177);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.container p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container .btn{
+    background-color: white;
+    color: rgb(103, 75, 177);
+    padding-block: 12px;
+    padding-inline: 80px;
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.container .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+
+}
+
+.container .footer i{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+
+.container .btn:hover{
+    background-color: rgb(233,128,231);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.container .footer i:hover{
+    cursor: pointer;
+    color: rgb(233,128,231);
+    border: 1px solid rgb(233,128,231);
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .container{
+        max-width: 1000px;
+        min-height: 500px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(4,1fr);
+        background-image: url(/static/images/bg-desktop.svg);
+        background-color: rgb(103, 75, 177);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .logo{
+
+        grid-column: span 4;
+        width: 30%;
+    }
+
+    .image{
+        grid-column: span 2;
+    }
+
+    .container div{
+        grid-column: span 2;
+        text-align: left;
+    }
+
+
+
+    .container .footer{
+      grid-column: 4;
+      margin-top: 3em;
+      margin-left: 5em;
+    
+    }
+
+    
+}
