@@ -1,4 +1,4 @@
-# Huddle Landing Page with Single Introductory Section
+# Hurdle Landing Page with Single Introductory Section
 
 This project is a responsive landing page built using HTML and CSS. It was created as a solution for the "Huddle landing page with single introductory section" challenge on Frontend Mentor.
 
@@ -16,7 +16,7 @@ This project is a responsive landing page built using HTML and CSS. It was creat
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Swati7819/huddle-landing-page.git`
+1. Clone the repository: `git clone https://github.com/Swati7819/hurdle-landing-page.git`
 2. Navigate into the project directory: `cd huddle-landing-page`
 3. Open the `index.html` file in your preferred web browser.
 
